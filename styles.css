@@ -1,0 +1,162 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-top: 0;
+  padding: 0;
+  background-color: #c7dca7; /* Light Gray Background */
+  /* overflow: hidden; Hide overflow to make the DiabCare section full screen */
+}
+
+header {
+  /* Blue Header */
+  color: #fff; /* White Text */
+  text-align: center;
+  padding: 1em 0;
+}
+
+h1 {
+  font-size: 8em; /* Set font size to large */
+  margin: 0;
+  padding: 50px;
+  animation: moveTexth1 3s infinite; /* Add animation */
+  text-shadow: 15px 15px 1px rgba(0, 243, 0, 0.5);
+}
+.quote {
+  font-size: 3em;
+  margin: 0;
+  padding: 50px;
+  animation: moveTextquote 3s linear; /* Add animation */
+  overflow: hidden; /* Hide overflowing content */
+  text-shadow: 5px 5px 2px rgba(243, 243, 243, 0.5);
+}
+
+@keyframes moveTexth1 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes moveTextquote {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Rest of your existing styles */
+
+/* Add this to your existing CSS */
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  overflow: hidden;
+  font-size: 3em;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 10px; /* Adjust spacing between bubbles */
+}
+
+nav a {
+  display: block;
+  width: 230px; /* Set a fixed width for circular appearance */
+  height: 230px; /* Set a fixed height for circular appearance */
+  line-height: 230px; /* Center the text vertically */
+  background-color: white; /* Dark Background */
+  color: #c7dca7;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 30%; /* Create a circular border */
+}
+
+nav a:hover {
+  background-color: #a3b763;
+  color: white; /* Darker background on hover */
+}
+
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#home {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: #c7dca7; /* Green Background */
+  color: #fff; /* White Text */
+}
+
+#services {
+  background-color: #c7dca7; /* Red Background */
+  color: #fff; /* White Text */
+}
+
+#doctors {
+  background-color: #c7dca7; /* Yellow Background */
+  color: #fff; /* White Text */
+}
+
+#contact {
+  background-color: #c7dca7; /* Purple Background */
+  color: #fff; /* White Text */
+}
+
+footer {
+  background-color: #c7dca7; /* Dark Gray Footer */
+  color: #a59c9c; /* White Text */
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0.75em;
+}
+
+/* Add animations */
+h1,
+h2,
+h3,
+p {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+h1,
+h2,
+h3,
+p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+nav {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+nav {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.vision {
+  font-size: 3.5em;
+  margin: 0;
+  padding: 20px;
+  animation: moveTexth1 2s linear; /* Add animation */
+  overflow: hidden; /* Hide overflowing content */
+  text-shadow: 5px 5px 2px rgba(243, 243, 243, 0.5);
+}
+.info {
+  font-size: 1.5em;
+  /* Add animation */
+  overflow: hidden; /* Hide overflowing content */
+}
